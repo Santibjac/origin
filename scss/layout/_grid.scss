@@ -48,7 +48,7 @@
                 box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
                 object-fit: cover;
                 }
-            
+            }   
     .gallery__item:nth-child(1) {
         grid-row-start: span 3;
     }
@@ -70,7 +70,7 @@
     .gallery__item:nth-child(6) {
         grid-column-start: span 2;
     }
-}
+
 
                 /* Resoluciones mayores a 1024px */
 
