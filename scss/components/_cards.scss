@@ -1,10 +1,10 @@
 
 
 .row .col .card img{
-    filter: grayscale(65%);
+    color: map-get($grayscale, 100);;
 }
     &:hover {
-    filter: grayscale(0%);
+    color: map-get($grayscale, 100);
     transition: 1.3s;
     }
 .card-text {
