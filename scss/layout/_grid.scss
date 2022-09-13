@@ -1,24 +1,25 @@
-
+@import "../utils/extend";
+   
     .titulo-galeria {
-        text-align: center;
+        @extend %grid-galeria;
         }
-            &.gallery-container {
+           .gallery-container {
             display: grid;
-            width: 80%;
+            width: 90%;
             grid-template-columns: repeat(2, 1fr);
             grid-auto-rows: 200px;
             padding: 0 30px;
             grid-gap: 10px;
         }
-            &.gallery__img {
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-                object-fit: cover;
-            }
+                .gallery__img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+                    object-fit: cover;
+                }
 
-                /* Resoluciones menores a 1024px */
+                /* Resoluciones menores a 1024psx */ 
 
 @media (max-width: 1024px) {
     .gallery-container {
@@ -32,7 +33,7 @@
     .titulo-galeria {
         text-align: center;
         }
-        &.gallery-container {
+        .gallery-container {
             display: grid;
             width: 90%;
             grid-template-columns: repeat(2, 1fr);
@@ -80,10 +81,9 @@
           }
 
     .gallery-container {
-        @extend .grid-galeria;
         grid-gap: 10px;
     }
-        &.gallery__img {
+        .gallery__img {
             width: 100%;
             height: 100%;
             border-radius: 10px;
@@ -96,13 +96,13 @@
     }
 
     .gallery__item:nth-child(2) {
-        grid-row-start: span 2;
-        grid-column-start: span 2;
+        grid-row-start: span 3;
+        grid-column-start: span 4;
     }
 
     .gallery__item:nth-child(3) {
-        grid-column-start: span 3;
-        grid-row-start: span 2;
+        grid-column-start: span 4;
+        grid-row-start: span 1;
     }
 
     .gallery__item:nth-child(5) {

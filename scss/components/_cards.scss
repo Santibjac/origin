@@ -1,12 +1,13 @@
-
+@import url();
 
 .row .col .card img{
-    color: map-get($grayscale, 100);;
+    color: #99A0A0;;
+        &:hover {
+        color: #99A0A0;
+        transition: 1.3s;
+        }
 }
-    &:hover {
-    color: map-get($grayscale, 100);
-    transition: 1.3s;
-    }
+
 .card-text {
     margin: 15px;
 }
