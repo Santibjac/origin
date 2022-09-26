@@ -1,0 +1,30 @@
+.footter{
+    background: #dfdfdf;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+
+.content-foo{
+  text-align: center;
+
+}
+
+.content-foo h4{
+  font-size: 1.3rem;
+    color: #000;
+    border-bottom: 3px solid #efcf00;
+}
+
+.content-foo p{
+  font-size: 1.3rem;
+    color: #000;
+}
+
